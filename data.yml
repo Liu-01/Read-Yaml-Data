@@ -1,0 +1,27 @@
+#['name1','name2','name3'] 单参列表方式
+test_login0 :
+  - 'name1'
+  - 'name2'
+  - 'name3'
+#[('name4','password4'),('name5','password5'),('name6','password6')]多参列表套元组
+test_login1 :
+  -
+    - 'name4'
+    - 'password4'
+  -
+    - 'name5'
+    - 'password5'
+  -
+    - 'name6'
+    - 'password6'
+#[{'name7':'password7'},{'name8':'password8'},{'name9':'password9'}]
+test_login2 :
+  -
+    name : 'name7'
+    password : 'password7'
+  -
+    name : 'name8'
+    password : 'password8'
+  -
+    name : 'name9'
+    password : 'password9'
